@@ -283,7 +283,7 @@ Naming of variables should be as descriptive as possible. Single letter variable
 
 **Preferred**
 
-```obejctive-c
+```objective-c
 NSString *firstName = @"Juan";
 NSInteger numberOfRows = 10;
 NSDictionary *response = @{};
@@ -332,11 +332,7 @@ Classes must be a noun and the first letter must be in upper case. Camel-case st
 **Not Preferred**
 
 ```objective-c
-@interfce mYPerson : NSObject
-...
-@end
-
-@Interface MYBody_Upper : NSObject
+@interface mYPerson_Upper : NSObject
 ...
 @end
 ```
