@@ -136,11 +136,9 @@ Just indent 4 spaces.
 ----if (!bar) {
 --------for (int i = 0; i < 5; i++) {
 ------------NSString *bar = [NSString stringWithFormat:@"%d", i];
-------------...
---------}    
+------------...--------}    
 ----} else {
---------...
-----}
+--------...----}
 }
 ```
 
@@ -154,10 +152,8 @@ Put the open brace 1 space inline with the method and other control statements.
     if (!bar) {
         while (woo) {
             ...
-        }
-    } else {
-        ...
-    }
+        }    } else {
+        ...    }
 }
 ```
 **Not Preferred**
@@ -168,11 +164,8 @@ Put the open brace 1 space inline with the method and other control statements.
     {
         while (woo){
             ...
-        }
-    } else {
-    	...
-    }
-}
+        }    } else {
+    	...    }}
 ```
 
 ###2.3 Scope's First Line <a id="first-line"></a>
@@ -186,8 +179,7 @@ Avoid putting new line space above the first line of a scope.
     
     if (foo) {
     	int bar = 0;
-    	...
-    }
+    	...    }
     ...
 }
 ```
@@ -201,9 +193,7 @@ Avoid putting new line space above the first line of a scope.
     
     if (foo) {
         
-        int bar = 0;
-    }
-    
+        int bar = 0;    }    
 }
 ```
 ###2.4 If-Else and Loops <a id="If-else-and-loops"></a>
@@ -213,13 +203,9 @@ Avoid putting new line space above the first line of a scope.
 ```objective-c
 for (int i = 0; i < 10; i++) {
     if (!foo) {
-        ...	
-    } else if (bar) {
-        ...	
-    } else {
-        ...	
-    }     	
-}
+        ...	    } else if (bar) {
+        ...	    } else {
+        ...	    }     	}
 ```
 
 **Not Preferred**
@@ -227,13 +213,9 @@ for (int i = 0; i < 10; i++) {
 ```objective-c
 for(int i =0; i< 10;i++) {
     if(!foo) {
-        ...	
-    }else if (bar) {
-        ...	
-    }else{
-        ...	
-    }     	
-}
+        ...	    }else if (bar) {
+        ...	    }else{
+        ...	    }     	}
 ```
 
 ###2.5 Case Statements <a id="case-statements"></a>
@@ -244,8 +226,7 @@ for(int i =0; i< 10;i++) {
 switch (foo) {
     case 1: {
         // Multi-line using braces
-        ...
-    }
+        ...    }
         break;
     case 2:
         // Single-line
@@ -253,8 +234,7 @@ switch (foo) {
         break;
     default:
         ...
-        break;     
-}
+        break;     }
 ```
 **Not Preferred**
 
@@ -263,8 +243,7 @@ switch(foo){
     case 1: 
     {
         // Multi-line using braces
-        ...
-    }
+        ...    }
     break;
     case 2:
         // Single-line
@@ -272,8 +251,7 @@ switch(foo){
         break;
     default:
         ...
-        break;     
-}
+        break;     }
 ```
 
 
@@ -318,7 +296,7 @@ Put the asterisk one space away from the parameter type.
 - (instancetype)initWithRow:(NSInteger)row andColumn:(NSInteger)column;
 ```
 
-###3.3 Classes
+###3.3 Classes <a id="classes"></a>
 Classes must be a noun and the first letter must be in upper case. Camel-case style should be followed.
 
 **Preferred**
@@ -339,7 +317,7 @@ Classes must be a noun and the first letter must be in upper case. Camel-case st
 
 
 ##4. Declaration <a id="declaration"></a>
-###4.1 Properties
+###4.1 Properties <a id="properties"></a>
 The attributes of a property should be in this order: _type of storage_, _atomicity_, _custom setter method_, _custom getter method_. There is a space after the `@property` keyword and the declaration of the its attributes. Each attribute must be separated by a comma and a space. If the name of a `BOOL` property is an adjective, the property can omit the word 'is' prefix but must specify the get accessor method.
 
 **Preferred**
@@ -357,7 +335,7 @@ The attributes of a property should be in this order: _type of storage_, _atomic
 @property (readwrite,strong)NSInteger age;
 ```
 
-###4.2 Enumerated Types
+###4.2 Enumerated Types <a id="enumerated-types"></a>
 
 **Preferred**
 
@@ -367,8 +345,7 @@ typedef NS_ENUM(NSInteger, MYFinger) {
     MYFingerIndex,
     MYFingerMiddle,
     MYFingerRing,
-    MyFingerPinky
-};
+    MyFingerPinky};
 ```
 
 **Not Preferred**
@@ -379,11 +356,10 @@ typedef enum {
     MYFingerIndex,
     MYFingerMiddle,
     MYFingerRing,
-    MyFingerPinky
-} MyFinger;
+    MyFingerPinky} MyFinger;
 ```
 
-###4.3 Custom Constructors
+###4.3 Custom Constructors <a id="custom-constructors"></a>
 
 **Preferred**
 
@@ -399,7 +375,7 @@ typedef enum {
 + (id)sharedManager;
 ```
 
-###4.4 Literals
+###4.4 Literals <a id="literals"></a>
 Since `NSString`, `NSDictionary`, `NSArray`, and `NSNumber` are immutable, use `@""`, `@{}`, `@[]`, and `@()` respectively when declaring a new instance;
 
 **Preferred**
@@ -456,7 +432,7 @@ Singleton objects should use a thread-safe pattern for creating their shared ins
 }
 ```
 
-###4.7 Private Methods and Variables
+###4.7 Private Methods and Variables <a id="private-methods-and-variables"></a>
 All private methods and variables should be declared in the implementation file under a class extension. Private variables must be treated as properties.
 
 **Preferred**
@@ -494,8 +470,7 @@ All private methods and variables should be declared in the implementation file 
 // implementation file
 @interface MYPerson () {
 	NSString *_foo;
-	CGFloat _bar;
-}
+	CGFloat _bar;}
 
 - (void)hibernate;
 - (void)clap;
@@ -506,9 +481,3 @@ All private methods and variables should be declared in the implementation file 
 ...
 @end
 ```
-
-
-
-
-
-
