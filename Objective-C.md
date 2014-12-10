@@ -1,5 +1,5 @@
 # Coding Convention (Objective-C)
-This coding convention is inspired by the [official raywenderlich.com Objective-C style guide](https://github.com/raywenderlich/objective-c-style-guide/blob/master/README.md#literals).
+This coding convention is inspired by the [official raywenderlich.com Objective-C style guide](https://github.com/raywenderlich/objective-c-style-guide/blob/master/README.md#literals). :D
 ##Table of Contents
 [1. Code Organization](#code-orgnization) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;
