@@ -91,7 +91,7 @@ Pull requests are used to manage changes made from contributors or developers [[
   
 Once a pull request is sent, project maintainers can review the set of changes and discuss potential modification [[2]](https://help.github.com/articles/using-pull-requests/#article-platform-nav). In other words, when a developer has filed a pull request it means that he/she is requesting the project maintainer to pull the changes from his/her branch to another branch (also from repo to another repo) [[3]](https://www.atlassian.com/git/tutorials/making-a-pull-request).  
   
-Before filing a pull request, you must compare the source branch/repo to the destination branch/repo and if there are changes to the destination branch/repo, merge with and test the changes from the destination repo [[4]](https://confluence.atlassian.com/display/BITBUCKET/Work+with+pull+requests).
+Before filing a pull request, you must compare the source branch/repo to the destination branch/repo and if there are changes to the destination branch, **merge** with and **test** the changes from the destination branch [[4]](https://confluence.atlassian.com/display/BITBUCKET/Work+with+pull+requests). After a successful merge, conflict resolutions, and fixes on the affected changes (this might arise because of the merge), the developer can now file a pull request.
 
 **General Process:** [[5]](https://www.atlassian.com/git/tutorials/making-a-pull-request/how-it-works)    
 >
