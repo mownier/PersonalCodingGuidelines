@@ -103,6 +103,25 @@ Before filing a pull request, you must compare the source branch/repo to the des
 
 <a id="merging"></a>
 ## 3. Merging
+After a pull request from a feature branch is being code reviewed and there are no problems, the project maintainer merge the feature branch into the development branch.
+
+```git
+# Switches to the development branch.
+$ git checkout development
+
+# Merges the current branch to the specified branch
+# which is the 'feature-branch-name'.
+# The '--no-ff' argument generates a merge commit.
+# This is useful for documenting all merges done.
+$ git merge --no-ff feature-branch-name
+```
+
+After a thorough testing on the development branch and there are no problems, the project maintainer can now merge the development branch into the master branch.
+
+```git
+$ git checkout master
+$ git merge --no-ff development
+```
 
 <a id="code-review"></a>
 ## 4. Code Review
