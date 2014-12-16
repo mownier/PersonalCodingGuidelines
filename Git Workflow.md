@@ -87,13 +87,13 @@ $ git push origin feature-branch-name
 
 <a id="pull-requests"></a>
 ## 2. Pull Requests
-Pull requests are used to manage changes made from contributors or developers [[1]](http://yangsu.github.io/pull-request-tutorial/).  
+Pull requests are used to manage changes made from contributors or developers [[1]](http://yangsu.github.io/pull-request-tutorial/). These are living conversations that streamline the process of discussing, reviewing, and managing changes to code [[2]](https://github.com/features).  
   
-Once a pull request is sent, project maintainers can review the set of changes and discuss potential modification [[2]](https://help.github.com/articles/using-pull-requests/#article-platform-nav). In other words, when a developer has filed a pull request it means that he/she is requesting the project maintainer to pull the changes from his/her branch to another branch (also from repo to another repo) [[3]](https://www.atlassian.com/git/tutorials/making-a-pull-request).  
+Once a pull request is sent, project maintainers can review the set of changes and discuss potential modification [[3]](https://help.github.com/articles/using-pull-requests/#article-platform-nav). In other words, when a developer has filed a pull request it means that he/she is requesting the project maintainer to pull the changes from his/her branch to another branch (also from repo to another repo) [[4]](https://www.atlassian.com/git/tutorials/making-a-pull-request).  
   
-Before filing a pull request, you must compare the source branch/repo to the destination branch/repo and if there are changes to the destination branch, **merge** with and **test** the changes from the destination branch [[4]](https://confluence.atlassian.com/display/BITBUCKET/Work+with+pull+requests). After a successful merge, conflict resolutions, and fixes on the affected changes (this might arise because of the merge), the developer can now file a pull request.
+Before filing a pull request, you must compare the source branch/repo to the destination branch/repo and if there are changes to the destination branch, **merge** with and **test** the changes from the destination branch [[5]](https://confluence.atlassian.com/display/BITBUCKET/Work+with+pull+requests). After a successful merge, conflict resolutions, and fixes on the affected changes (this might arise because of the merge), the developer can now file a pull request.
 
-**General Process:** [[5]](https://www.atlassian.com/git/tutorials/making-a-pull-request/how-it-works)    
+**General Process:** [[6]](https://www.atlassian.com/git/tutorials/making-a-pull-request/how-it-works)    
 >
 1. A developer creates the feature in a dedicated branch in their local repo.  
 2. The developer pushes the branch to a repository.  
