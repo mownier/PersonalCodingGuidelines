@@ -145,9 +145,11 @@ Just indent 4 spaces.
 ----if (!bar) {
 --------for (int i = 0; i < 5; i++) {
 ------------NSString *bar = [NSString stringWithFormat:@"%d", i];
-------------...--------}    
+------------...
+--------}    
 ----} else {
---------...----}
+--------...
+----}
 }
 ```
 
@@ -161,8 +163,10 @@ Put the open brace 1 space inline with the method and other control statements.
     if (!bar) {
         while (woo) {
             ...
-        }    } else {
-        ...    }
+        }
+    } else {
+        ...
+    }
 }
 ```
 **Not Preferred**
@@ -173,8 +177,11 @@ Put the open brace 1 space inline with the method and other control statements.
     {
         while (woo){
             ...
-        }    } else {
-    	...    }}
+        }
+    } else {
+    	...
+    }
+}
 ```
 
 <a id="first-line"></a>
@@ -189,7 +196,8 @@ Avoid putting new line space above the first line of a scope.
     
     if (foo) {
     	int bar = 0;
-    	...    }
+    	...
+    }
     ...
 }
 ```
@@ -203,11 +211,13 @@ Avoid putting new line space above the first line of a scope.
     
     if (foo) {
         
-        int bar = 0;    }    
+        int bar = 0;
+    }
+    
 }
 ```
 
-<a id="If-else-and-loops"></a>
+<a id="if-else-and-loop"></a>
 ###2.4 If-Else and Loops
 
 **Preferred**
@@ -215,9 +225,13 @@ Avoid putting new line space above the first line of a scope.
 ```objective-c
 for (int i = 0; i < 10; i++) {
     if (!foo) {
-        ...	    } else if (bar) {
-        ...	    } else {
-        ...	    }     	}
+        ...	
+    } else if (bar) {
+        ...	
+    } else {
+        ...	
+    }     	
+}
 ```
 
 **Not Preferred**
@@ -225,9 +239,13 @@ for (int i = 0; i < 10; i++) {
 ```objective-c
 for(int i =0; i< 10;i++) {
     if(!foo) {
-        ...	    }else if (bar) {
-        ...	    }else{
-        ...	    }     	}
+        ...	
+    }else if (bar) {
+        ...	
+    }else{
+        ...	
+    }     	
+}
 ```
 
 <a id="case-statements"></a>
@@ -239,7 +257,8 @@ for(int i =0; i< 10;i++) {
 switch (foo) {
     case 1: {
         // Multi-line using braces
-        ...    }
+        ...
+    }
         break;
     case 2:
         // Single-line
@@ -247,7 +266,8 @@ switch (foo) {
         break;
     default:
         ...
-        break;     }
+        break;     
+}
 ```
 **Not Preferred**
 
@@ -256,7 +276,8 @@ switch(foo){
     case 1: 
     {
         // Multi-line using braces
-        ...    }
+        ...
+    }
     break;
     case 2:
         // Single-line
@@ -264,7 +285,8 @@ switch(foo){
         break;
     default:
         ...
-        break;     }
+        break;     
+}
 ```
 
 
@@ -372,7 +394,8 @@ typedef NS_ENUM(NSInteger, MYFinger) {
     MYFingerIndex,
     MYFingerMiddle,
     MYFingerRing,
-    MyFingerPinky};
+    MyFingerPinky
+};
 ```
 
 **Not Preferred**
@@ -383,7 +406,8 @@ typedef enum {
     MYFingerIndex,
     MYFingerMiddle,
     MYFingerRing,
-    MyFingerPinky} MyFinger;
+    MyFingerPinky
+} MyFinger;
 ```
 
 <a id="custom-constructors"></a>
@@ -502,7 +526,8 @@ All private methods and variables should be declared in the implementation file 
 // implementation file
 @interface MYPerson () {
 	NSString *_foo;
-	CGFloat _bar;}
+	CGFloat _bar;
+}
 
 - (void)hibernate;
 - (void)clap;
