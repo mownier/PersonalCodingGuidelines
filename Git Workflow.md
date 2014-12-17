@@ -10,7 +10,7 @@
 [2. Pull Requests](#pull-requests)  
 [3. Merging](#merging)  
 [4. Code Review](#code-review)  
-[5. Tags and Versioning](#tags)  
+[5. Tags and Versioning](#tags-and-versioning)  
 [6. Issues](#issues)
 
 <a id="branches"></a>
@@ -125,9 +125,45 @@ $ git merge --no-ff development
 
 <a id="code-review"></a>
 ## 4. Code Review
+Code review helps disseminate knowledge across teams, catches bugs (or more likely poor architectural decisions) before they bite you, and provide opportunities to educate junior engineers [[7]](http://justinlilly.com/misc/state_of_githubs_code_review.html).
 
 <a id="tags"></a>
-## 5. Tags
+## 5. Tags and Versioning
+Tagging in Git is a great way to denote specific release versions of your code [[8]](http://gitready.com/beginner/2009/02/03/tagging.html). Naming of tags should be in this format:
+
+```git
+# Production
+rel-v1.0.0
+rel-v1.0.1
+rel-v1.1.0
+
+# Development
+dev-v1.0.0.1
+dev-v1.0.0.2
+dev-v1.0.0.3
+dev-v1.0.1.1
+```
+**Creating and pushing tags:**
+
+```git
+# Switches to the master branch
+$ git checkout master
+
+# Creates a tag
+$ git tag -a rel-v1.0.0 -m "Created the first version."
+
+# Shows all tags
+$ git tag
+rel-v1.0.0
+
+# Pushing tags to the remote repo
+$ git push --tags
+ 
+```
 
 <a id="issues"></a>
 ## 6. Issues
+Issues are a great way to keep track of tasks, enhancements, and bugs for your projects and they’re kind of like email—except they can be shared and discussed with the rest of your team [[9]](https://guides.github.com/features/issues/index.html).
+
+* [Bitbucket](https://confluence.atlassian.com/display/BITBUCKET/Use+the+issue+tracker)  
+* [GitHub](https://guides.github.com/features/issues/)
