@@ -85,6 +85,16 @@ $ git push
 $ git push origin feature-branch-name
 ```
 
+**Deleting feature branches:**
+
+```git
+# Deletes a local branch
+$ git branch -d feature-branch-name
+
+# Deleting a remote branch
+$ git push origin --delete feature-branch-name
+```
+
 <a id="pull-requests"></a>
 ## 2. Pull Requests
 Pull requests are used to manage changes made from contributors or developers [[1]](http://yangsu.github.io/pull-request-tutorial/). These are living conversations that streamline the process of discussing, reviewing, and managing changes to code [[2]](https://github.com/features).  
