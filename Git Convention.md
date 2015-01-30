@@ -199,14 +199,12 @@ EXAMPLE:
 * The reporter must set the description of the issue. Do not submit the issue if there is no description.
 
 ## 3. Pull Requests
-* Compare and review the differences of the source and destination branch
-* Try to spot issues that the reviewer might find and clean up those
-* Format would be
-
-```
-
-```
-
+* Compare and review the differences of the source and destination branch.
+* Try to spot issues that the reviewer might find and clean up those.
+* Be descriptive with the title. Make it comprehensive. It can be rephrased from the issue title. As much as possible, the title should be related to the issue.
+* Explain some details in the description on what you have done.
+* Approve the pull requests once all the commits are approved.
+* 
 
 ## 4. Branch Naming
 ```git
@@ -228,9 +226,6 @@ EXAMPLE:
 > implement/forgot-password
 > enhance/home/product-table-view-cells 
 ```
-
-## 5. Scenarios
-
 ## 6. References
 [1] https://www.reviewboard.org/docs/codebase/dev/git/clean-commits/  
 [2] http://www.mutuallyhuman.com/blog/2011/01/10/clean-commits/  
