@@ -204,7 +204,6 @@ EXAMPLE:
 * Be descriptive with the title. Make it comprehensive. It can be rephrased from the issue title. As much as possible, the title should be related to the issue.
 * Explain some details in the description on what you have done.
 * Approve the pull requests once all the commits are approved.
-* 
 
 ## 4. Branch Naming
 ```git
@@ -226,6 +225,31 @@ EXAMPLE:
 > implement/forgot-password
 > enhance/home/product-table-view-cells 
 ```
+## 5. ToDos
+**Developer**
+
+* Create issue on the assigned tasks and issues in mantis.
+* Create branch from development locally.
+* Push the branch to remote.
+* Work with that branch.
+* Commit all your changes daily.
+* Once done, compare the branch from development and review the changes.
+* Clean up your commits by rebasing (i.e. editing commit messages, combining necessary commits, etc).
+* Create a pull request.
+* Do not add a separate commit if there are comments given by the reviewer on it. (such as coding convention, optimization, etc). Instead, perform a rebase and amend the commit.
+* Once the pull request is approved and merged to the development, go to the issues related to that branch and mark it as resolved.  
+
+**Monitoring Person**
+
+* Assign tasks by creating an issue.
+* Check the issues reported by the developers. Make sure that the title and the description are comprehensive.
+* If there are pull requests, proof-read it's title and description.
+* Edit the pull requests as necessary.
+* Review each commit and put some comments.
+* Request a rebase as necessary.
+* If there's nothing wrong in the commit, approve it.
+* Once all commits are approved, approve and merge the pull request.
+
 ## 6. References
 [1] https://www.reviewboard.org/docs/codebase/dev/git/clean-commits/  
 [2] http://www.mutuallyhuman.com/blog/2011/01/10/clean-commits/  
