@@ -8,15 +8,13 @@
 - Build app for testing.
 - Wait for the test result to be uploaded in trello.
 - While waiting, the monitoring person will frequently check mantis for the reported issues and then assign a person to deal with it.
-- The assigned developer may not or may fix the issue right away.
 - Fixing the issue, the developer should create an issue in bitbucket.
 - The developer should create a new branch from the development branch to fix the issue.
 - The developer should create a pull request.
 - Once the pull request is merged, the monitoring person marked the bitbucket issue as 'resolved'.
-- All bitbucket issues must be marked as 'resolved' before changing the status of all the mantis issues to 'resolve'.
+- All bitbucket issues must be marked as 'resolved' before changing the status of all the mantis issues to 'resolve'. Then, the assigned developer for the issue should change the status to 'resolved' in mantis.
 - If the status of the issue in mantis is changed to 'close', the monitoring person should change the bitbucket issue to 'closed' respectively.
 - If the tester approaches because he/she can not perform the other test cases due to application crash issues, the assigned developer must prioritize to fix that issue (development hot fixes).
-- Once the test result file is uploaded, that is the time the developers must fix the issues assigned to them.
 - If all the mantis issues are changed to 'resolve', build the app for testing again.
 - Once the pull request of the developer is merged into the development branch, he/she can now click the resolve button of the bitbucket issue.
 
