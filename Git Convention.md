@@ -175,7 +175,21 @@ To revert to a specific head due to a bad rebase
 $ git reflog
 
 # Suppose the old commit was HEAD@{5} in the ref log
-git reset --hard HEAD@{5}
+$ git reset --hard HEAD@{5}
+```
+
+### 1.7. Showing commit messages
+
+```git
+$ git log
+# Prints the details of each comit.
+
+$ git log --oneline
+# Prints commit messages in one line.
+
+$ git log --oneline development..other-branch
+# Shows all the commits that are not in the
+# development branch.
 ```
 
 ## 2. Issues
@@ -271,3 +285,4 @@ EXAMPLE:
 [18] http://nearthespeedoflight.com/article/2013_07_10_pull_requests_volume_1__writing_a_great_pull_request
 [19] http://blog.codeship.com/github-code-review/
 
+[3584](http://example.org:83/view.php?id=3643)
