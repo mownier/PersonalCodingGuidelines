@@ -169,6 +169,8 @@ rel-v1.0.0
 # Pushing tags to the remote repo
 $ git push --tags
  
+# Pushing a specific tag
+$ git push origin rel-v1.0.0
 ```
 
 <a id="issues"></a>
